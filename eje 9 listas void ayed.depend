@@ -24,3 +24,28 @@
 1684203972 c:\users\casar\onedrive\documentos\documents\eje 9 listas void ayed\alumno.h
 	"lista.h"
 
+1684204719 source:c:\users\beto\desktop\nueva carpeta (2)\listavoid1\alumno.c
+	"alumno.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1684204719 c:\users\beto\desktop\nueva carpeta (2)\listavoid1\alumno.h
+	"lista.h"
+
+1684204719 c:\users\beto\desktop\nueva carpeta (2)\listavoid1\lista.h
+	<limits.h>
+	<stdbool.h>
+
+1684204719 source:c:\users\beto\desktop\nueva carpeta (2)\listavoid1\lista.c
+	"lista.h"
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+
+1684204719 source:c:\users\beto\desktop\nueva carpeta (2)\listavoid1\main.c
+	"lista.h"
+	"alumno.h"
+	<stdio.h>
+	<stdlib.h>
+
