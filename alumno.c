@@ -7,7 +7,15 @@ struct AlumnoE{
 int dni;
 float promedio;
 char nombre[20];
+};
+//con lista de inmuebles
+struct InmuebleE{
+int anioConstruccion;
+float valor;
+char direccion[20];
+char duenio[20]
 };;
+
 
 AlumnoP contructorAlumno(char nombre[20],int dni ,float promedio ){
  AlumnoP a=malloc(sizeof(struct AlumnoE));
@@ -18,7 +26,23 @@ AlumnoP contructorAlumno(char nombre[20],int dni ,float promedio ){
  return a;
 
 };
+
+InmuebleP contructorInmueble(char direcion[20],char duenio [20] ,int anioConstruccion ,float valor ){
+ InmuebleP a=malloc(sizeof(struct InmuebleE));
+ a->anioConstruccion=anioConstruccion;
+ strcpy(a->duenio,duenio);
+ a->valor=valor;
+ strcpy(a->direccion,direcion);
+
+ return a;
+
+};
+
 void DesrtructorAlumno(AlumnoP a){
+free(a);
+
+};
+void DesrtructorInmueble(InmuebleP a){
 free(a);
 
 };
@@ -26,6 +50,10 @@ void Mostrar(AlumnoP a){
 printf("\n%d dni,%s nombre, %f promedio\n",a->dni,a->nombre,a->promedio);
 
 };
+void MostrarInmueble(InmuebleP a){
+printf("\n%d anio de la construcion,%s la direcion,%s el dueño %f valor\n",a->anioConstruccion,a->direccion,a->duenio,a->valor);
+
+}
 char*  getNombre(AlumnoP a){
 return a->nombre;
 
@@ -124,11 +152,11 @@ Lista* listaDuplicate(Lista* list) {
     if (!list)
         return NULL;
 
-    Lista* duplicate = (Lista*)malloc(sizeof(Lista));
+    Lista* duplicate = malloc(sizeof(Lista));
     listaInit(duplicate, list->tamDelDatoEnBytes);
 
     Nodo* current = list->primero;
-    while (current) {
+    while (!current) {
         listaPushBack(duplicate, current->data);
         current = current->proximo;
     }

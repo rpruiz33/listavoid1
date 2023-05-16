@@ -4,9 +4,13 @@
 #define ALUMNO_H_INCLUDED
 #include "lista.h"
 struct AlumnoE;
+struct InmuebleE;
 typedef struct AlumnoE *AlumnoP;
+typedef struct InmuebleE*InmuebleP;
 AlumnoP contructorAlumno(char nombre[20],int dni ,float promedio);
+InmuebleP contructorInmueble(char direcion[20],char duenio [20] ,int anioConstruccion ,float valor );
 void DesrtructorAlumno(AlumnoP a);
+void DesrtructorInmueble(InmuebleP a);
 void Mostrar(AlumnoP a);
 char * getNombre(AlumnoP a);
 float getPromedio(AlumnoP a);
