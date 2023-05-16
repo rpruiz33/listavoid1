@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1684204033 source:c:\users\casar\onedrive\documentos\documents\eje 9 listas void ayed\main.c
+	"lista.h"
+	"alumno.h"
+	<stdio.h>
+	<stdlib.h>
+
+1684203986 source:c:\users\casar\onedrive\documentos\documents\eje 9 listas void ayed\lista.c
+	"lista.h"
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+
+1684203872 c:\users\casar\onedrive\documentos\documents\eje 9 listas void ayed\lista.h
+	<limits.h>
+	<stdbool.h>
+
+1684203872 source:c:\users\casar\onedrive\documentos\documents\eje 9 listas void ayed\alumno.c
+	"alumno.h"
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
+1684203972 c:\users\casar\onedrive\documentos\documents\eje 9 listas void ayed\alumno.h
+	"lista.h"
+
